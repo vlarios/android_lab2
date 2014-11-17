@@ -35,6 +35,26 @@
             android:id="@+id/giroText"
             android:layout_gravity="center_horizontal" />
 
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

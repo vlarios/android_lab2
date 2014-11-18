@@ -12,6 +12,7 @@ import java.util.ArrayList;
 public class MainActivity extends Activity {
 
     public static ArrayList <ListItem> mArraylist = null;
+    public static int cnt = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

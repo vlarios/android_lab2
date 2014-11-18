@@ -14,7 +14,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="137dp">
+        android:layout_marginTop="137dp"
+        android:id="@+id/linearLayout">
 
         <EditText
             android:layout_width="match_parent"
@@ -61,5 +62,22 @@
             android:text="Add"
             android:onClick="addElements"
             android:id="@+id/addBtn" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/cnt" />
+    </LinearLayout>
+
 </RelativeLayout>

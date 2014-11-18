@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -21,6 +22,9 @@ public class AddElementsWindow extends Activity {
         setContentView(R.layout.activity_add_elements_window);
 
         Intent intent = getIntent();
+
+        TextView textView = (TextView) findViewById(R.id.cnt);
+        textView.setText(Integer.toString(MainActivity.cnt));
         //mArraylist = new ArrayList<ListItem>();
     }
 
@@ -58,6 +62,9 @@ public class AddElementsWindow extends Activity {
         listItem.setImageUser(getResources().getDrawable(R.drawable.bart));
         //add item to array list
         MainActivity.mArraylist.add(listItem);
+        MainActivity.cnt++;
+        TextView textView = (TextView) findViewById(R.id.cnt);
+        textView.setText(Integer.toString(MainActivity.cnt));
         editText.setText("");
         editText1.setText("");
 
